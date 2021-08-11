@@ -80,5 +80,4 @@ flutter:
       fonts:
       - asset: assets/fonts/Lato-Regular.ttf
 assets:
-- assets/images/perfil.jpg
 

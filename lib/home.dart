@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_appkunio/gradient_back.dart';
 import 'package:flutter_appkunio/review.dart';
 
 import 'package:flutter_appkunio/description_place.dart';
+import 'package:flutter_appkunio/review_list.dart';
 
 class MyHome extends StatelessWidget {
 
@@ -27,7 +29,7 @@ class MyHome extends StatelessWidget {
     );
 
 
-    final review = Container(
+    final reviewList = Container(
 
       margin: EdgeInsets.only(
 
@@ -39,34 +41,37 @@ class MyHome extends StatelessWidget {
       ),
 
 
-      height: 80,
 
-      child: Review("assets/images/perfil.jpg","KUNIO", "1 reviews - 4 photos" , 2 , "Exelente lugar para los pibes.")
+
+      child: ReviewList()
 
     );
 
 
+    //ListView
+
+    final listView = ListView(
+
+children:<Widget> [
+
+  descriptionPlace,
+
+
+],
+
+
+    );
+
 
     return Scaffold(
 
-      appBar: AppBar(
 
-        title: Text(
-
-
-          "My places"
-
-        ),
-
-
-
-      ),
 
       body: Stack(
 
         children: <Widget> [
 
-          review
+          GradientBack()
 
         ],
 

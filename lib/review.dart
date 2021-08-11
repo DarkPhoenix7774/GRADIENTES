@@ -30,6 +30,7 @@ class Review extends StatelessWidget{
       margin: EdgeInsets.only(
 
 
+        top: 10,
         right: 11
 
 
